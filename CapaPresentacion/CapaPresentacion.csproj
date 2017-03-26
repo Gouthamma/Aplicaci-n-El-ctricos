@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CCBC4FD-DAD5-44CC-A728-3F01829CE34B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.Modeling.Sdk.Diagrams.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAgInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgInspeccion.Designer.cs">
+      <DependentUpon>FormAgInspeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComuna.Designer.cs">
+      <DependentUpon>FormComuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConstructora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConstructora.Designer.cs">
+      <DependentUpon>FormConstructora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormElectricos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormElectricos.Designer.cs">
+      <DependentUpon>FormElectricos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEP.Designer.cs">
+      <DependentUpon>FormEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInspeccion.Designer.cs">
+      <DependentUpon>FormInspeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformacion.Designer.cs">
+      <DependentUpon>FormInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormITO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormITO.Designer.cs">
+      <DependentUpon>FormITO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormObras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormObras.Designer.cs">
+      <DependentUpon>FormObras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPartidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPartidas.Designer.cs">
+      <DependentUpon>FormPartidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPendientes.Designer.cs">
+      <DependentUpon>FormPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecepcion.Designer.cs">
+      <DependentUpon>FormRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipo.Designer.cs">
+      <DependentUpon>FormTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInstalador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInstalador.Designer.cs">
+      <DependentUpon>FormInstalador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProvincia.Designer.cs">
+      <DependentUpon>FormProvincia.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{7252a210-9ae4-451a-8166-257ff53a5b5d}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\CapaEntidad.csproj">
+      <Project>{efc21dae-0410-43b1-8876-c677c2945f7f}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAgInspeccion.resx">
+      <DependentUpon>FormAgInspeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComuna.resx">
+      <DependentUpon>FormComuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConstructora.resx">
+      <DependentUpon>FormConstructora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormElectricos.resx">
+      <DependentUpon>FormElectricos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEP.resx">
+      <DependentUpon>FormEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInspeccion.resx">
+      <DependentUpon>FormInspeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformacion.resx">
+      <DependentUpon>FormInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormITO.resx">
+      <DependentUpon>FormITO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormObras.resx">
+      <DependentUpon>FormObras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPartidas.resx">
+      <DependentUpon>FormPartidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPendientes.resx">
+      <DependentUpon>FormPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProvincia.resx">
+      <DependentUpon>FormProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecepcion.resx">
+      <DependentUpon>FormRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipo.resx">
+      <DependentUpon>FormTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInstalador.resx">
+      <DependentUpon>FormInstalador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botton Verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-con-x-001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211794653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Vbe.Interop.Forms">
+      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Outlook">
+      <Guid>{464A5FBB-27DA-4AC6-9D74-2F0E731ADFEE}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PDFShellLib">
+      <Guid>{67E94227-7662-4050-9C72-746983CF37A2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
